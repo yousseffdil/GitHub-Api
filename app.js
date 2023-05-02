@@ -19,8 +19,8 @@ form.addEventListener("submit", (event) => {
             const login = data.login;
             console.log(data)
             const resultHtml = `
-            <h1>${login}</h1>
-        <h3>@${name}</h3>
+            <h1>${name}</h1>
+        <h3>@${login}</h3>
         <img src="${avatarUrl}" alt="${name}'s avatar">
         <p class="Bio">${bio}</p>
         <div class= "repos">
@@ -31,6 +31,7 @@ form.addEventListener("submit", (event) => {
       `;
 
             resultContainer.innerHTML = resultHtml;
+            
         })
         .catch(error => {
             console.error(error);
