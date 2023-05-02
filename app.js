@@ -38,4 +38,3 @@ form.addEventListener("submit", (event) => {
             resultContainer.innerHTML = "<p>Error</p>";
         });
 });
-
