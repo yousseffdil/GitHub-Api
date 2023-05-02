@@ -12,8 +12,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://dynamicwallpaper.club/landing-vids/1.png');
+    background-image: url('https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2048x1536-1455.jpg');
     overflow: hidden;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: inherit;
+    filter:brightness(1.3);
 }
 
 /* Container */
@@ -187,4 +200,3 @@ div.desktop {
 .desktop .icon img {
     width: 100%;
 }
-
